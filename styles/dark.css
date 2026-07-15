@@ -1,0 +1,21 @@
+/* Тёмная тема при принудительном включении по классу */
+
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --bg-color: #000028;
+  --text-color: #ffffff;
+  --title-color: #ff0070;
+  --decor-color: #ff0070;
+  --header-text-color: #ff0070;
+  --card-bg-color: #ff0070;
+  --card-text-color: #000028;
+  --link-shadow: 2px 2px 0 var(--accent-color);
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --corner-color: #ff0070;
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-fallback: #000028;
+}
+
+.theme-dark .header__rec-label {
+  display: inline;
+}

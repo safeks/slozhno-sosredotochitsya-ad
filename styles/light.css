@@ -1,0 +1,45 @@
+/* Светлая тема при принудительном включении по классу */
+
+:root.theme-light {
+  --accent-color: #ff8dcb;
+  --bg-color: #ffffff;
+  --text-color: #353430;
+  --title-color: #ff0070;
+  --decor-color: #ff8dcb;
+  --header-text-color: #ff0070;
+  --card-bg-color: #ff8dcb;
+  --card-text-color: #ffffff;
+  --link-shadow: 2px 2px 0 var(--accent-color);
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --corner-color: #ff0070;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-fallback: #ffffff;
+}
+
+.theme-light .header__rec-label {
+  display: none;
+}
+
+/* При системной светлой теме */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --bg-color: #ffffff;
+    --text-color: #353430;
+    --title-color: #ff0070;
+    --decor-color: #ff8dcb;
+    --header-text-color: #ff0070;
+    --card-bg-color: #ff8dcb;
+    --card-text-color: #ffffff;
+    --link-shadow: 2px 2px 0 var(--accent-color);
+    --title-shadow: 4px 4px 0 var(--accent-color);
+    --corner-color: #ff0070;
+    --bg-image: url(../images/cover-image-light.png);
+    --bg-fallback: #ffffff;
+  }
+
+  .header__rec-label {
+    display: none;
+  }
+}
