@@ -1,0 +1,320 @@
+.page {
+  min-inline-size: 320px;
+  font-family: var(--font-main);
+  font-variation-settings: 'wght' var(--font-weight-text);
+  background-color: #e7e7e7;
+  background-image: var(--bg-image);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--color-black);
+}
+
+/* ===== HEADER ===== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: var(--card-width);
+  margin: 100px auto;
+  padding: clamp(120px, 30vw, 136px) 0 25px;
+  border: 2px solid var(--color-black);
+  background-color: var(--color-bg);
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+}
+
+.header__logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  line-height: 1;
+}
+
+.header__title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* ===== MAIN ===== */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 54px;
+  margin-block-end: 54px;
+}
+
+/* ===== CARD ===== */
+
+.card {
+  width: var(--card-width);
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-black);
+}
+
+.card__title {
+  font-size: 18px;
+  font-variation-settings: 'wght' var(--font-weight-title);
+  padding: 5px 10px;
+  border-block-end: 2px solid var(--color-black);
+  line-height: 1.21;
+}
+
+.card__image-wrapper {
+  position: relative;
+  border-block-end: 2px solid var(--color-black);
+}
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__label {
+  position: absolute;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+  text-shadow:
+    -1px -1px 0 var(--color-white),
+     1px -1px 0 var(--color-white),
+    -1px  1px 0 var(--color-white),
+     1px  1px 0 var(--color-white);
+  z-index: 1;
+}
+
+@supports ((-webkit-text-stroke: 1px var(--color-white)) or (text-stroke: 1px var(--color-white))) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--color-white);
+    text-shadow: none;
+  }
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 25px;
+}
+
+.card__text {
+  font-size: 18px;
+  line-height: 1.167;
+}
+
+.card__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+/* ===== КНОПКА СЕРДЦА ===== */
+
+.card__icon-button {
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 38px;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--color-black);
+}
+
+/* ===== КНОПКА LIKE / SAVE / OK ===== */
+
+.button {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: 2px solid var(--color-black);
+  transition: box-shadow 0.3s ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--color-black);
+}
+
+.card__like-button {
+  position: relative;
+  overflow: hidden;
+  padding: 9px 17px;
+  min-inline-size: 130px;
+  block-size: 38px;
+}
+
+.card__like-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.card__like-button:hover::before {
+  transform: translateX(0);
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+  color: var(--color-white);
+  mix-blend-mode: difference;
+}
+
+/* ===== SAVE BUTTON ===== */
+
+.save-button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-block-end: 100px;
+}
+
+.save-button {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--color-bg);
+  padding: 15px 20px;
+}
+
+.save-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.save-button:hover::before {
+  transform: translateX(0);
+}
+
+.save-button__icon {
+  position: relative;
+  z-index: 1;
+  inline-size: 21px;
+  block-size: 21px;
+  color: var(--color-white);
+  mix-blend-mode: difference;
+  flex-shrink: 0;
+}
+
+/* ===== DIALOG ===== */
+
+.dialog {
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-black);
+  padding: 30px;
+  max-inline-size: 357px;
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 75%);
+}
+
+.dialog__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dialog__icon {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+  color: var(--color-black);
+}
+
+.dialog__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.dialog__button {
+  position: relative;
+  overflow: hidden;
+  padding: 9px 17px;
+  inline-size: 100%;
+  text-transform: uppercase;
+}
+
+.dialog__button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.dialog__button:hover::before {
+  transform: translateX(0);
+}
+
+/* ===== ФИЛЬТРЫ ===== */
+
+.card__image_filter-0 { filter: sepia(0.3) saturate(1.4) brightness(1.1); }
+.card__image_filter-1 { filter: hue-rotate(200deg) saturate(0.7); }
+.card__image_filter-2 { filter: saturate(2) hue-rotate(260deg); }
+.card__image_filter-3 { filter: hue-rotate(240deg) saturate(1.2); }
+.card__image_filter-4 { filter: contrast(1.1) saturate(0.8) hue-rotate(30deg); }
+.card__image_filter-5 { filter: grayscale(0.5) sepia(0.4) contrast(1.1); }
+.card__image_filter-6 { filter: blur(4px) brightness(0.85) saturate(1.5); }
+.card__image_filter-7 { filter: contrast(1.3) saturate(0.6) hue-rotate(330deg); }
+
+/* ===== MOBILE ===== */
+
+@media (width <= 375px) {
+  .header {
+    width: 100%;
+    margin-block-start: 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .save-button {
+    flex-direction: column;
+  }
+
+  .save-button__icon {
+    inline-size: 28px;
+    block-size: 28px;
+  }
+}

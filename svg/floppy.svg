@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="display:none" aria-hidden="true">
+  <symbol id="floppy" viewBox="0 0 28 28" fill="none">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+      d="M2 2H24.5L26 3.5V26H2V2ZM3.5 3.5V24.5H24.5V4.12L23.88 3.5H3.5Z"
+      fill="currentColor"/>
+    <rect x="6.5" y="2.5" width="11" height="8" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <rect x="9" y="15" width="10" height="9" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    <rect x="8.5" y="3" width="2.5" height="5" fill="currentColor"/>
+  </symbol>
+</svg>
