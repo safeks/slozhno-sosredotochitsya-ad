@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root {
   --color-accent: #ef3636;
   --color-white: #ffffff;
@@ -27,3 +28,42 @@
     ),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
 }
+=======
+/*
+<<<<<<< HEAD
+  Переменные для тёмной темы (основная)
+*/
+
+:root {
+  /* Цвета */
+  --accent-color: #ff0070;
+  --bg-color: #000028;
+  --text-color: #ffffff;
+  --title-color: #ff0070;
+  --decor-color: #ff0070;
+  --header-text-color: #ff0070;
+  --card-bg-color: #ff0070;
+  --card-text-color: #000028;
+  --link-shadow: 2px 2px 0 var(--accent-color);
+  --title-shadow: 4px 4px 0 var(--accent-color);
+  --corner-color: #ff0070;
+
+  /* Фон */
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-fallback: #000028;
+
+  /* Шрифт */
+  --font-family: 'IBM Plex mono', monospace;
+  --font-size-main: 18px;
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+
+  /* Отступы */
+  --section-padding: 20px;
+}
+=======
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+>>>>>>> d0c0560021479174d1c116a4f0acab897c3194de
+>>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0

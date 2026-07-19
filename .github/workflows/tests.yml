@@ -19,4 +19,8 @@ jobs:
       - name: Tests
         uses: Yandex-Practicum/test-project-action@v1
         with:
+<<<<<<< HEAD
           project: 'zakrivayuschiy-teg-ad'
+=======
+          project: 'slozhno-sosredotochitsya-ad'
+>>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0

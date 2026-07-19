@@ -1,18 +1,58 @@
+<<<<<<< HEAD
+=======
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+
+>>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 h1, h2, h3, h4, p, ul, ol, li, blockquote, fieldset {
+=======
+body {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+picture {
+>>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 ul, ol {
   list-style: none;
 }
 
 button {
   cursor: pointer;
+=======
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+>>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0
 }

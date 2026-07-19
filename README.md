@@ -1,0 +1,1 @@
+https://github.com/safeks/slozhno-sosredotochitsya-ad.git
