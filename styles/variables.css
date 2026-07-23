@@ -1,69 +1,21 @@
-<<<<<<< HEAD
 :root {
-  --color-accent: #ef3636;
-  --color-white: #ffffff;
-  --color-black: #000000;
-  --color-bg: #f4f2ef;
-
-  --font-main: 'Inter', sans-serif;
-  --font-accent: 'PressStart2P', fantasy;
-
-  --font-weight-text: 400;
-  --font-weight-title: 700;
-
-  --card-width: clamp(375px, 50vw, 700px);
-
-  --contour-color: #000000;
-  --animation-fill-color: #ef3636;
-
-  --bg-image: repeating-linear-gradient(
-      to right,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  --main-font: "Inter-Variable", sans-serif;
+  --accent-font: "PressStart2P", sans-serif;
+  --regular-font-weight: 400;
+  --bold-font-weight: 700;
+  --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+  --accent-color: rgba(255, 255, 255, 1);
+  --text-color: rgba(0, 0, 0, 1);
+  --contour-color: rgba(0, 0, 0, 1);
+  --animation-fill-color: rgba(255, 0, 0, 1);
+  --bg-image:
+    repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
 }
-=======
-/*
-<<<<<<< HEAD
-  Переменные для тёмной темы (основная)
-*/
 
-:root {
-  /* Цвета */
-  --accent-color: #ff0070;
-  --bg-color: #000028;
-  --text-color: #ffffff;
-  --title-color: #ff0070;
-  --decor-color: #ff0070;
-  --header-text-color: #ff0070;
-  --card-bg-color: #ff0070;
-  --card-text-color: #000028;
-  --link-shadow: 2px 2px 0 var(--accent-color);
-  --title-shadow: 4px 4px 0 var(--accent-color);
-  --corner-color: #ff0070;
-
-  /* Фон */
-  --bg-image: url(../images/cover-image-dark.png);
-  --bg-fallback: #000028;
-
-  /* Шрифт */
-  --font-family: 'IBM Plex mono', monospace;
-  --font-size-main: 18px;
-  --font-weight-normal: normal;
-  --font-weight-bold: bold;
-
-  /* Отступы */
-  --section-padding: 20px;
+@media (width <= 375px) {
+  :root {
+    --section-inline-size: 100%;
+  }
 }
-=======
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
->>>>>>> d0c0560021479174d1c116a4f0acab897c3194de
->>>>>>> 5a25b59532e4aa3960b51d9bc6f80cbc5c54c9b0
